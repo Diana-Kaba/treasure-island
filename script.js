@@ -1,9 +1,9 @@
+let map = document.getElementById("map");
 let treasure = {
-  x: Math.random() * 700,
-  y: Math.random() * 500,
+  x: Math.random() * map.width,
+  y: Math.random() * map.height,
 };
 
-let map = document.getElementById("map");
 let coords = document.getElementById("coords");
 map.onmousemove = showCoords;
 
