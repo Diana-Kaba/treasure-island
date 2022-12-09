@@ -1,6 +1,6 @@
 let treasure = {
-  x: 100,
-  y: 200,
+  x: Math.random() * 700,
+  y: Math.random() * 500,
 };
 
 let map = document.getElementById("map");
@@ -12,7 +12,7 @@ function showCoords(event) {
   let y = event.offsetY;
   // coords.value = "Координаты: " + x + ", " + y;
   coords.value = `Координаты: ${x}, ${y}`;
-  if (Math.abs(treasure.x - x) && Math.abs(treasure.y - y) < 30) {
+  if (Math.abs(treasure.x - x) < 30 && Math.abs(treasure.y - y) < 30) {
     alert("Сокровище здесь!");
   }
 }
