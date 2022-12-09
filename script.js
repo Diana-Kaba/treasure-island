@@ -1,7 +1,7 @@
 let map = document.getElementById("map");
 let treasure = {
-  x: Math.random() * map.width,
-  y: Math.random() * map.height,
+  x: Math.floor(Math.random() * map.width),
+  y: Math.floor(Math.random() * map.height),
 };
 
 let coords = document.getElementById("coords");
